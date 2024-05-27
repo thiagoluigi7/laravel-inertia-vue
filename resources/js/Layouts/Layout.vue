@@ -14,6 +14,12 @@
         <div v-if="$page.props.auth.user" class="space-x-6">
           <Link
             class="nav-link"
+            :href="route('transfer')"
+            :class="{ 'bg-slate-700': $page.component === 'Transfer' }"
+            >Transfer</Link
+          >
+          <Link
+            class="nav-link"
             :href="route('dashboard')"
             :class="{ 'bg-slate-700': $page.component === 'Dashboard' }"
             >Dashboard</Link
